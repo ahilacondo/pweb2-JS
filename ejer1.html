@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="alumno" content="ahilacondo">
+        <title>Exercise 1</title>
+    </head>
+    <body>
+        <div id="div">
+        </div>
+    <script>
+        let now = new Date();
+        document.getElementById("div").innerHTML = "<h3>Date: " + now + "</h3><br>"
+                                                  +"<h3>Day: " + DW(now.getDay()) + "</h3>";
+        
+        function DW(number) {
+            let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            return day[number];
+        }                                          
+    </script>
+    </body>
+</html>
