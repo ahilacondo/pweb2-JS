@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="alumno" content="ahilacondo">
+        <title>Exercise 3</title>
+    </head>
+    <body>
+        <div id="div">
+            <h2>Faltan</h2>
+            <h2 id="days"></h2>
+            <h2>Para el aniversario de Arequipa</h2>
+        </div>
+    <script>
+       let dayAqp = new Date(2023, 07, 15);
+       let now = new Date();
+
+       //Obtenemos la diferencia de tiempo
+       let x = dayAqp - now;
+       
+       //Convertimos a días
+       x = Math.round(x / (1000.0 * 60 * 60 * 24)); //Milisegundos por dia
+       document.getElementById("days").innerHTML = x + " días";                           
+    </script>
+    </body>
+</html>
