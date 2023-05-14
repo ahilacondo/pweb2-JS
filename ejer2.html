@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="alumno" content="ahilacondo">
+        <title>Exercise 2</title>
+    </head>
+    <body>
+        <div id="div">
+            <h2>Ingrese una palabra</h2>
+            <input type="text" id="word" placeholder="Escriba aquí">
+            <input type="button" id="inverted" value="Inverted Word" onclick="invertedWord()">
+            <h2>Palabra Invertida: </h2>
+            <div id="div2"></div>
+        </div>
+    <script>
+        function invertedWord(){
+            let word = document.getElementById("word").value;
+            let aux = "";
+            for (let x = word.length; x >= 0; --x){
+                aux += word.charAt(x);
+            }
+
+            document.getElementById("div2").innerHTML = aux;
+        }
+                                             
+    </script>
+    </body>
+</html>
