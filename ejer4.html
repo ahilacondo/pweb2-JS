@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="alumno" content="ahilacondo">
+        <title>Exercise 3</title>
+    </head>
+    <body>
+        <div id="div">
+            <input type="text" id="URL" placeholder="Ingrese una URL meet"><br>
+            <input type="button" id="script" value="Eliminar Guiones" onclick="strip()">
+            <h2 id="modified"></h2>
+        </div>
+    <script>
+       function strip(){
+        let url = document.getElementById("URL").value.split("-").join("");
+        document.getElementById("modified").innerHTML = url;
+      }                           
+    </script>
+    </body>
+</html>
