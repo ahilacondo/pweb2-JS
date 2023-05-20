@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="alumno" content="ahilacondo">
-        <title>Exercise 4</title>
-    </head>
-    <body>
-        <div id="div">
-            <input type="text" id="URL" placeholder="Ingrese una URL meet"><br>
-            <input type="button" id="script" value="Eliminar Guiones" onclick="strip()">
-            <h2 id="modified"></h2>
-        </div>
-    <script>
-       function strip(){
-        let url = document.getElementById("URL").value.split("-").join("");
-        document.getElementById("modified").innerHTML = url;
-      }                           
-    </script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="alumno" content="ahilacondo">
+    <title>Exercise 4</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Ingrese el URL de la sesión de Google Meet</h2>
+    <form>
+      <input type="text" id="urlInput" placeholder="https://meet.google.com/...">
+      <button type="button" onclick="extractCode()">Obtener código</button>
+    </form>
+    <div id="codeResult"></div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
