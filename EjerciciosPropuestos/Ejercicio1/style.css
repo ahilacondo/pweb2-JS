@@ -1,0 +1,27 @@
+body {
+    background-image: url("https://s1.1zoom.me/b5050/409/Alarm_clock_Clock_Colored_background_560279_3840x2400.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-left: 300px;
+}
+
+#div {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+h3 {
+    color: blue;
+    font-family: Arial, sans-serif;
+}
+
+br {
+    margin-bottom: 20px;
+}
